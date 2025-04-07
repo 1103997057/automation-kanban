@@ -1,4 +1,3 @@
-// src/lib/mockData.ts
 export const kanbanCards = [
   {
     id: '1',
@@ -18,4 +17,4 @@ export const kanbanCards = [
     description: '这个流程已完成。',
     status: '已完成',
   },
-]
+];
