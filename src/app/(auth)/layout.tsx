@@ -1,13 +1,13 @@
-import React from 'react'
+'use client';
 
-type Props = { children: React.ReactNode }
+import { useRouter } from 'next/navigation';
 
-const Layout = ({ children }: Props) => {
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const router = useRouter();
+
   return (
-    <div className="flex items-center justify-center h-screen w-full">
+    <div>
       {children}
     </div>
-  )
+  );
 }
-
-export default Layout
